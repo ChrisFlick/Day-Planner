@@ -18,7 +18,7 @@ $(document).ready( () => {
     let STARTING_HOUR = 9; // Start at 9 AM
     let MAX_HOUR = 17;  // End at 5 PM
 
-    for (let i = STARTING_HOUR; i <= MAX_HOUR; i++) {
+    for (let i = STARTING_HOUR; i <= MAX_HOUR; i++) { // Loop through and create calander.
         let $time = $('<div>');
         let $task = $('<div>')
         let $form = $('<form>')
@@ -79,4 +79,17 @@ $(document).ready( () => {
         $form.append($submit)    
         
     }
+
+    $('button').on('click', function(event) {
+        event.preventDefault();
+
+        let id = $(this).attr('id')
+        id = id.split('-');
+        id = id[1];
+        
+        tasks[id] = $('#task-' + id).val();
+        localStorage.setItem('tasks', JSON.stringify(tasks))
+
+
+    });
 })
