@@ -37,11 +37,11 @@ $(document).ready( () => {
         $task.css('border-style', 'solid')
 
         if ( iTime === currentTime ) { // If the current time matches the calender time being iterated on make the background color grey
-            $task.css('background-color', 'red')
+            $task.css('background-color', '#f7949d')
         } else if (iTime < currentTime) { // If the current time has pased the iterated calender time make the background grey
             $task.css('background-color', 'lightgrey')
         } else { // Otherwise future time will have a green background
-            $task.css('background-color', 'green')
+            $task.css('background-color', 'lightgreen')
         }
         
         $container.append($task);
