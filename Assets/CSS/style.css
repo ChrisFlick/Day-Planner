@@ -5,12 +5,15 @@ body {
 }
 
 textarea{
+  position: relative;
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  left: 100px;
+  top: -25px;
 }
 
 .jumbotron {
@@ -33,7 +36,7 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-style: 1px solid white;;
 }
 
 .hour {
@@ -68,4 +71,19 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+form {
+  position: relative;
+  top: -29px;
+}
+
+input {
+  position: relative;
+  left: 100px;
+
+}
+button {
+  height: 90px;
+  top: -10px;
 }
