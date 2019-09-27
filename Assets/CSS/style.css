@@ -13,7 +13,7 @@ textarea{
   border-left: 1px solid black;
   padding: 10px;
   left: 100px;
-  top: -25px;
+  top: -21px;
 }
 
 .jumbotron {
@@ -35,7 +35,7 @@ textarea{
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
+  height: 50px;
   border-style: 1px solid white;;
 }
 
@@ -43,6 +43,9 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+
+  height: 50px;
+  width: 100px;
 }
 
 .past {

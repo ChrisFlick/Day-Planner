@@ -24,15 +24,11 @@ $(document).ready( () => {
         let $form = $('<form>')
         let $input = $('<textarea>')
         let $submit = $('<button>')
+        let $icon = $('<i>')
 
         let iTime = moment(i + ":00", 'hh').format('HH');
         let currentTime = moment().format('HH');
-      
-        // 
-        // $div.css('background-color', "lightgrey")
-
-        $time.height('50px')
-        $time.width('100px')
+    
 
 
         $time.attr('class', 'hour')
@@ -59,12 +55,15 @@ $(document).ready( () => {
             $input.text(tasks[i]);
         }
 
+        $icon.attr('class', 'fa fa-floppy-o fa-2x')
+
 
         $submit.css('position', 'relative')
         $submit.attr('type', 'submit')
         $submit.attr('class', "btn btn-primary float-right saveBtn")
-        $submit.text('Save')
+        
         $submit.attr('id', "button-" + i)
+        $submit.append($icon)
 
         
 
